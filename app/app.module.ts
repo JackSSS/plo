@@ -14,7 +14,7 @@ import { DashboardComponent }   from './dashboard.component';
 import { PortfolioComponent }  from './portfolio.component';
 import { ResumeComponent }  from './resume.component';
 import { ContactComponent }  from './contact.component';
-
+import { AboutComponent }  from './about.component';
 
 @NgModule({
   imports: [
@@ -30,6 +30,7 @@ import { ContactComponent }  from './contact.component';
     PortfolioComponent,
     ResumeComponent,
     ContactComponent,
+    AboutComponent,
   ],
   providers: [ ],
   bootstrap: [ AppComponent ]

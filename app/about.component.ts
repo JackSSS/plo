@@ -3,7 +3,8 @@ import {Component} from '@angular/core'
 
 @Component({
   selector: 'about',
-  templateUrl: `
+  template: `
+  			<p>Hello there</p>
             `
 })
 export class AboutComponent {

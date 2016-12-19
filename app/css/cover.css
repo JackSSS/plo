@@ -35,7 +35,7 @@ a:hover {
 html,
 body {
   height: 100%;
-  background-color: #333;
+  background-color: #fff;
 }
 body {
   color: #fff;
@@ -59,11 +59,16 @@ body {
 .cover-container {
   margin-right: auto;
   margin-left: auto;
+  margin-bottom: 350px;
 }
 
 /* Padding for spacing */
 .inner {
+  max-width: 1200px;
   padding: 30px;
+  position: fixed;
+  width: 100%
+
 }
 
 .logo {
@@ -90,7 +95,7 @@ body {
   padding-left: 0;
   font-weight: bold;
   color: #fff; /* IE8 proofing */
-  color: rgba(255,255,255,.75);
+  color: #000;
   border-bottom: 2px solid transparent;
 }
 .masthead-nav > li > a:hover,
@@ -149,7 +154,7 @@ body {
 @media (min-width: 768px) {
   /* Pull out the header and footer */
   .masthead {
-    position: fixed;
+    position: absolute;
     top: 0;
   }
   .mastfoot {

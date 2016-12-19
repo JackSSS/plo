@@ -19,8 +19,14 @@ import { Component } from '@angular/core';
         </ul>
       </div>
     </div>
+      <router-outlet></router-outlet>
+      
+          <div class="mastfoot">
+            <div class="inner">
+              <p>by Jack Sneed | 2016</p>
+            </div>
+          </div>
   </div>
-  <router-outlet></router-outlet>
   `,
 })
 export class AppComponent {
