@@ -1,7 +1,9 @@
 /*
  * Globals
  */
-
+my-app i {
+	margin-top: 400px;
+}
 li {
   list-style-type: none;
 }
@@ -10,10 +12,14 @@ li {
 a,
 a:focus,
 a:hover {
-  color: #fff;
+	text-decoration: none;
+}
+
+a:hover {
+	opacity: 0.5;
 }
 .nav-links {
-  font-family: 'Rochester', cursive;  
+  font-family: 'Grand Hotel', cursive;
   font-size: 25px;
 }
 
@@ -34,13 +40,12 @@ a:hover {
 
 html,
 body {
+	margin: 0;
+	padding: 0;
   height: 100%;
   background-color: #fff;
-}
-body {
-  color: #fff;
+  color: #000;
   text-align: center;
-  text-shadow: 0 1px 3px rgba(0,0,0,.5);
 }
 
 /* Extra markup and styles for table-esque vertical and horizontal centering */
@@ -49,8 +54,6 @@ body {
   width: 100%;
   height: 100%; /* For at least Firefox */
   min-height: 100%;
-  -webkit-box-shadow: inset 0 0 100px rgba(0,0,0,.5);
-          box-shadow: inset 0 0 100px rgba(0,0,0,.5);
 }
 .site-wrapper-inner {
   display: table-cell;
@@ -59,7 +62,7 @@ body {
 .cover-container {
   margin-right: auto;
   margin-left: auto;
-  margin-bottom: 350px;
+  margin-bottom: 320px;
 }
 
 /* Padding for spacing */
@@ -67,14 +70,67 @@ body {
   max-width: 1200px;
   padding: 30px;
   position: fixed;
-  width: 100%
-
+  width: 100%;
+	animation-duration: .7s;
+  animation-name: slidein;
 }
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+.portfolio {
+	padding: 15px;
+	background-color: rgba(0,0,0,0.1);
+	animation-duration: .7s;
+	animation-name: slidein;
+}
+
+@keyframes slidein {
+	from {
+		margin-left: 100%;
+		width: 300%;
+	}
+
+	to {
+		margin-left: 0%;
+		width: 100%;
+	}
+}
+
+.portfolio a {
+	color: #000;
+}
+
 
 .logo {
-  height: 200px; 
+  height: 200px;
   float: left;
 }
+
+.logo:hover {
+	z-index: 0;
+}
+
+.logo2 {
+	z-index: 0;
+	height: 200px;
+	float: left;
+}
+
+.logo2:hover {
+	z-index: 10;
+}
+
+
 
 /*
  * Header
@@ -93,7 +149,7 @@ body {
 .masthead-nav > li > a {
   padding-right: 0;
   padding-left: 0;
-  font-weight: bold;
+	font-size: 30px;
   color: #fff; /* IE8 proofing */
   color: #000;
   border-bottom: 2px solid transparent;
@@ -101,8 +157,7 @@ body {
 .masthead-nav > li > a:hover,
 .masthead-nav > li > a:focus {
   background-color: transparent;
-  border-bottom-color: #a9a9a9;
-  border-bottom-color: rgba(255,255,255,.25);
+  opacity: 0.6;
 }
 .masthead-nav > .active > a,
 .masthead-nav > .active > a:hover,
@@ -112,6 +167,43 @@ body {
 }
 .nav-seperator {
   color: #00A300;
+}
+
+/*
+ * Portfolio
+ */
+
+.error:hover { text-shadow: 0 0 200px #ffffff,0 0 80px #008000,0 0 6px #0000ff; }
+.code:hover { text-shadow: 0 0 100px red,0 0 40px FireBrick,0 0 8px DarkRed; }
+.error {
+  color: #fff;
+  text-shadow: 0 0 80px #ffffff,0 0 30px #008000,0 0 6px #0000ff;
+}
+.error span {
+  animation: upper 11s linear infinite;
+}
+.code span:nth-of-type(2) {
+  animation: lower 10s linear infinite;
+}
+.code span:nth-of-type(1) {
+  text-shadow: none;
+  opacity:.4;
+}
+@keyframes upper {
+  0%,19.999%,22%,62.999%,64%, 64.999%,70%,100% {
+    opacity:.99; text-shadow: 0 0 80px #ffffff,0 0 30px #008000,0 0 6px #0000ff;
+  }
+  20%,21.999%,63%,63.999%,65%,69.999% {
+    opacity:0.4; text-shadow: none;
+  }
+}
+@keyframes lower {
+  0%,12%,18.999%,23%,31.999%,37%,44.999%,46%,49.999%,51%,58.999%,61%,68.999%,71%,85.999%,96%,100% {
+    opacity:0.99; text-shadow: 0 0 80px red,0 0 30px FireBrick,0 0 6px DarkRed;
+  }
+  19%,22.99%,32%,36.999%,45%,45.999%,50%,50.99%,59%,60.999%,69%,70.999%,86%,95.999% {
+    opacity:0.4; text-shadow: none;
+  }
 }
 
 @media (min-width: 768px) {
