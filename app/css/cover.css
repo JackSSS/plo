@@ -62,7 +62,7 @@ body {
 .cover-container {
   margin-right: auto;
   margin-left: auto;
-  margin-bottom: 320px;
+  margin-bottom: 300px;
 }
 
 /* Padding for spacing */
@@ -87,8 +87,10 @@ body {
   }
 }
 
-.portfolio {
+.portfolio, .skills {
 	padding: 15px;
+	font-size: 20px;
+	border: 1px dash #fff;
 	background-color: rgba(0,0,0,0.1);
 	animation-duration: .7s;
 	animation-name: slidein;
@@ -177,6 +179,9 @@ body {
 .code:hover { text-shadow: 0 0 100px red,0 0 40px FireBrick,0 0 8px DarkRed; }
 .error {
   color: #fff;
+	margin-right: 100px;
+	font-size: 100px;
+	text-align: right;
   text-shadow: 0 0 80px #ffffff,0 0 30px #008000,0 0 6px #0000ff;
 }
 .error span {
@@ -206,6 +211,19 @@ body {
   }
 }
 
+@media (min-width: 320px) {
+	.error {
+		font-size: 55px;
+	}
+	.inner {
+		
+	}
+}
+@media (min-width: 412px) {
+	.error {
+		font-size: 82px;
+	}
+}
 @media (min-width: 768px) {
   .masthead-brand {
     float: left;

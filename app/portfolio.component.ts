@@ -3,20 +3,22 @@ import {Component} from '@angular/core'
 @Component({
 	selector: 'portoflio',
 	template: `
+			<div>
+				<h2 class="error">Por<span>tfoli</span>o</h2>
+			</div>
 			<div class='portfolio'>
-			 <h2 class="error">Por<span>tfoli</span>o</h2>
          <ul>
            <li>
-             <h3><a target="_blank" href="https://www.stuffmapper.com">Stuffmapper</a></h3>
+             <p><a target="_blank" href="https://www.stuffmapper.com">Stuffmapper</a></p>
            </li>
             <li>
-             <h3>Lisa Ruckh</h3>
+             <p>Lisa Ruckh</p>
            </li>
            <li>
-             <h3 class="code"><span>Stud</span>io Artist<span>Collecti</span>ve</h3>
+             <p class="code"><span>Stud</span>io Artist<span>Collecti</span>ve</p>
            </li>
            <li>
-             <h3>Catch</h3>
+             <p>Catch</p>
            </li>
          </ul>
 			</div>
