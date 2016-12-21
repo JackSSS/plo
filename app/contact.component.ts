@@ -10,7 +10,7 @@ import {Component} from '@angular/core'
       <div class="portfolio">
          <ul>
            <li>
-             <a target="_top" href="mailto:sneed.jack@gmail.com"><i class="fa fa-envelope fa-3x" aria-hidden="true"></i>l</a>
+             <a target="_top" href="mailto:sneed.jack@gmail.com">sneed.jack@gmail.com</a>
            </li>
             <li>
              <a target="_blank" href="//www.linkedin.com/in/jacksneed"><i class="fa fa-linkedin fa-3x" aria-hidden="true"></i></a>
