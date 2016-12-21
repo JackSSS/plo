@@ -10,7 +10,7 @@ import { Component } from '@angular/core';
         <div>
 					<img src="./app/img/logo2.svg" class="logo">
         </div>
-        <ul class="nav masthead-nav col-sm-12 col-md-6 .col-sm-4">
+        <ul class="nav masthead-nav">
           <li class="nav-links"><a routerLink="">Home</a></li>
           <li class="nav-links"><a routerLink="portfolio">Portfolio</a></li>
           <li class="nav-links"><a routerLink="skills">Skills</a></li>
@@ -19,12 +19,9 @@ import { Component } from '@angular/core';
       </div>
     </div>
       <router-outlet></router-outlet>
-
-          <div class="mastfoot">
-            <div class="inner">
-              <p>by Jack Sneed | 2016</p>
-            </div>
-          </div>
+      <div class="mastfoot">
+        <p>by Jack Sneed | 2016</p>
+      </div>
   </div>
   `,
 })
