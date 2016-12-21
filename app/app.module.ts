@@ -12,26 +12,25 @@ import { InMemoryDataService }  from './in-memory-data.service';
 import { AppComponent }         from './app.component';
 import { DashboardComponent }   from './dashboard.component';
 import { PortfolioComponent }  from './portfolio.component';
-import { ResumeComponent }  from './resume.component';
+import { SkillsComponent }  from './skills.component';
 import { ContactComponent }  from './contact.component';
 
-
 @NgModule({
-  imports: [
-    BrowserModule,
-    FormsModule,
-    HttpModule,
-    InMemoryWebApiModule.forRoot(InMemoryDataService),
-    AppRoutingModule
-  ],
-  declarations: [
-    AppComponent,
-    DashboardComponent,
-    PortfolioComponent,
-    ResumeComponent,
-    ContactComponent,
-  ],
-  providers: [ ],
-  bootstrap: [ AppComponent ]
+	imports: [
+		BrowserModule,
+		FormsModule,
+		HttpModule,
+		InMemoryWebApiModule.forRoot(InMemoryDataService),
+		AppRoutingModule
+	],
+	declarations: [
+		AppComponent,
+		DashboardComponent,
+		PortfolioComponent,
+		SkillsComponent,
+		ContactComponent,
+	],
+	providers: [],
+	bootstrap: [AppComponent]
 })
 export class AppModule { }

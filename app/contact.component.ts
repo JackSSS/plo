@@ -4,22 +4,22 @@ import {Component} from '@angular/core'
 @Component({
   selector: 'contact',
   template: `
-						 <h2>Contact</h2>
-
-               <ul>
-                 <li>
-                   <input type="text" autoGrow />
-                 </li>
-                 <li>
-                   <input type="text" autoGrow />
-                 </li>
-                 <li>
-                   <input type="text" autoGrow />
-                 </li>
-                 <li>
-                   <input type="text" autoGrow />
-                 </li>
-               </ul>
+      <div>
+        <h2 class="error"><span>Co</span>ntact</h2>
+      </div>
+      <div class="portfolio">
+         <ul>
+           <li>
+             <a target="_top" href="mailto:sneed.jack@gmail.com">sneed.jack@gmail.com</a>
+           </li>
+            <li>
+             <a target="_blank" href="//www.linkedin.com/in/jacksneed"><i class="fa fa-linkedin fa-3x" aria-hidden="true"></i></a>
+           </li>
+           <li>
+             <a target="_blank" href="//github.com/JackSSS"><i class="fa fa-github fa-3x" aria-hidden="true"></i></a>
+           </li>
+         </ul>
+      </div>
             `
 })
 export class ContactComponent {
