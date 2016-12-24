@@ -5,4 +5,16 @@ h1 {
 
 .error {
   margin-right: 0px;
+  animation-duration: 2s;
+  animation-name: appear;
+}
+
+@keyframes appear {
+  from {
+  opacity: 0.1;
+  }
+
+  to {
+  opacity: 1;
+  }
 }
